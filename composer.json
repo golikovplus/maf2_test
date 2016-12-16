@@ -38,13 +38,13 @@
         ],
         "post-install-cmd": [
             "Illuminate\\Foundation\\ComposerScripts::postInstall",
-            "php artisan optimize"
+            "php artisan optimize",
+            "composer dump-autoload"
         ],
         "post-update-cmd": [
             "Illuminate\\Foundation\\ComposerScripts::postUpdate",
             "php artisan optimize"
         ],
-        "postinstall": "gulp --production && gulp phpunit"
     },
     "config": {
         "preferred-install": "dist"
